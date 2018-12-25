@@ -55,7 +55,7 @@ typedef struct {
  * 	 0      success  
  *   other  fail
 ******************************************************************************/
-int conf_init(/*void*/);
+int conf_init(void);
 
 /******************************************************************************
  *
@@ -103,6 +103,6 @@ nest_list *conf_get_options(conf_key config);
  * Description: 
  *      释放配置内存
 ******************************************************************************/
-void conf_free(/*void*/);
+void conf_free(void);
 
 #endif
