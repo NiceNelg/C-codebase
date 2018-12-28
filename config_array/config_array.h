@@ -1,9 +1,8 @@
 /******************************************************************************
- * Copyright(C),2010-2011,nicenelg@gmail.com
  * FileName: config_array.h
- * Author:nelg
- * Version:v1.0
- * Date:2018-12-11
+ * Author: nicenelg@gmail.com
+ * Version: v1.0
+ * Date: 2018-12-11
  * Description: 
  *  功能：
  *      1、读取配置文件信息，将配置项放置到全局变量CONFIG中。
@@ -97,46 +96,46 @@ static char *_CONF_OPTIONS_VAL[CONF_TOP_OPTIONS_MAX][CONF_OPTIONS_MAX] = {
 }while(0)
 
 /******************************************************************************
- *
  * Function name: conf_init
- * Description: 初始化配置
+ * Description:
+ *      初始化配置
  * Return: 
- * 	 0      success  
- *   other  fail
+ * 	    0      success  
+ *      other  fail
 ******************************************************************************/
 int conf_init();
 
 /******************************************************************************
- *
  * Function name: conf_get_option_val
- * Description: 获取子级配置的值
+ * Description:
+ *      获取子级配置的值
  * Parameter:
- *   @val       配置项的值         
- *   @config    顶级配置项
- *   @option    子级配置项
+ *      @val       配置项的值         
+ *      @config    顶级配置项
+ *      @option    子级配置项
  * Return:
- *   char_val   指针地址
- *   NULL       失败
+ *      char_val   指针地址
+ *      NULL       失败
 ******************************************************************************/
 conf_val conf_get_option_val(conf_opt config, conf_opt options);
 
 /******************************************************************************
- *
  * Function name: conf_get_options
- * Description: 获取对应顶级配置的所有子级配置项
+ * Description:
+ *      获取对应顶级配置的所有子级配置项
  * Parameter:
- *   @val       配置项的值         
- *   @config    顶级配置项
+ *      @val       配置项的值         
+ *      @config    顶级配置项
  * Return:
- *   char_options   指针地址
- *   NULL           失败
+ *      char_options   指针地址
+ *      NULL           失败
 ******************************************************************************/
 conf_options conf_get_options(conf_opt config);
 
 /******************************************************************************
- *
  * Function name: conf_free
- * Description: 释放配置内存
+ * Description:
+ *      释放配置内存
 ******************************************************************************/
 void conf_free();
 
